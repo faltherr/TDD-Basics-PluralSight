@@ -1,14 +1,12 @@
 import React from 'react';
 import '../App.css';
 import Header from '../Components/Header'
+import StoreLocator from './StoreLocator'
 
 function App() {
   return (
     <div className="App">
       <Header/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +15,7 @@ function App() {
         >
           Learn React
         </a>
+      <StoreLocator/>
     </div>
   );
 }
