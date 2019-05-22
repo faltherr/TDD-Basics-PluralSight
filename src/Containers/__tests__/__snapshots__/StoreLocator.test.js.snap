@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoreLocator Renders the correct snapshot 1`] = `
+<div>
+  <div
+    className="Header"
+  >
+    <img
+      alt="my coffee shop"
+      src="images/logo.png"
+    />
+  </div>
+  <div />
+  <div
+    className="MapBox"
+  >
+    <img
+      src="images/none.png"
+    />
+  </div>
+</div>
+`;
