@@ -1,9 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {shallow} from 'enzyme'
 import Header from '../Header';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Header />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe('Header', function(){
+  let mountedHeader
+  beforeEach(()=>{
+    mountedHeader = shallow(<Header/>)
+  })
+
+  it('renders without crashing', () => {
+    shallow(<Header/>);
+  });
+
+  it('renders a logo', () => {
+    //Use enzyme's jQuery(CSS) style selectors to find the specific logo image
+    const logoImg = mountedHeader.find('img').prop('src');
+    expect(logoImg).toEqual('images/logo.png');
+  });
+
+})

@@ -1,9 +1,10 @@
 export default function mapChooser(locationName){
+
     let imageName
     if(!locationName){
-        imageName = "default.jpg";
-    } else{
-        imageName = locationName + ".jpg";
+        locationName = "none";
     }
+        imageName = locationName + ".png";
+
     return (imageName);
 }
